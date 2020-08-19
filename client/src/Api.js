@@ -4,7 +4,7 @@ const API_URL =
     : "https://travel-log.prakharj05.vercel.app";
 
 export async function listLogEntries() {
-  const response = await fetch(`${API_URL}/routes/logs`);
+  const response = await fetch(`${API_URL}/routes/logs`, { mode: "no-cors" });
   return response.json();
 }
 

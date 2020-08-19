@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "travel-log",
+  "name": "travel-log-server",
   "builds": [
     {
       "src": "src/index.js",
@@ -13,11 +13,12 @@
       "dest": "src/index.js"
     }
   ],
+  "alias": ["travel-log-black-server"],
   "env": {
     "NODE_ENV": "production",
     "PORT": "1337",
-    "DATABASE_URL": "@travel-log-db",
-    "CORS_ORIGIN": "",
-    "API_KEY": "@travel-log-api-key"
+    "CORS_ORIGIN": "https://travel-log-nine.vercel.app",
+    "API_KEY": "@travel-log-api-key",
+    "DATABASE_URL": "@travel-log-db"
   }
 }
