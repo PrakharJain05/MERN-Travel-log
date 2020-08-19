@@ -17,7 +17,7 @@
   "env": {
     "NODE_ENV": "production",
     "PORT": "1337",
-    "CORS_ORIGIN": "https://travel-log-nine.vercel.app",
+    "CORS_ORIGIN": "*",
     "API_KEY": "@travel-log-api-key",
     "DATABASE_URL": "@travel-log-db"
   }

@@ -1,10 +1,10 @@
 const API_URL =
   window.location.hostname === "localhost"
     ? "http://localhost:1337"
-    : "https://travel-log.prakharj05.vercel.app";
+    : "https://travel-log-server-alpha.vercel.app";
 
 export async function listLogEntries() {
-  const response = await fetch(`${API_URL}/routes/logs`, { mode: "no-cors" });
+  const response = await fetch(`${API_URL}/routes/logs`);
   return response.json();
 }
 
