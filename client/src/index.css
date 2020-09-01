@@ -1,11 +1,14 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    height: "100vh";
-    width: "100vw";
-    overflow: hidden;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  height: "100vh";
+  width: "100vw";
+  overflow: hidden;
 }
 
 .marker {
@@ -20,16 +23,17 @@ body {
 }
 
 .marker.yellow path {
-  fill: #F3B73E;
+  fill: #f3b73e;
 }
 
 .popup {
-  width: 40vw;
+  width: 20vw;
   padding: 1rem;
+  border-radius: 10px;
 }
 
 .popup img {
-  height: 200px;
+  height: 150px;
   width: auto;
   text-align: center;
   margin: 0 auto;
@@ -40,8 +44,32 @@ body {
 .entry-form input,
 .entry-form textarea,
 .entry-form button {
+  border: none;
   font-size: 1rem;
-  margin: 0.5rem 0;
+  margin: 0.6rem 0;
   display: block;
   width: 100%;
+}
+.entry-form input,
+.entry-form textarea {
+  border-bottom: 0.4px grey solid;
+}
+.entry-form button {
+  margin-top: 20px;
+  padding: 4px;
+  background: rgb(182, 182, 182);
+}
+.header {
+  display: inline-block;
+  background: white;
+  padding: 1rem;
+  position: relative;
+  border-bottom-right-radius: 10px;
+}
+.search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 1;
 }
