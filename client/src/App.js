@@ -31,7 +31,7 @@ const App = () => {
       ...newViewport,
       ...geocoderDefaultOverrides,
     });
-  }, []);
+  }, [handleViewportChange]);
 
   const getEntries = async () => {
     const logEntries = await listLogEntries();
